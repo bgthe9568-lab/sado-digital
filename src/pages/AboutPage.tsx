@@ -1,4 +1,4 @@
-import { ArrowUpRight, Check, Compass, Eye, HandHeart, Target, Users } from 'lucide-react';
+import { Compass, Eye, HandHeart, Target, Users } from 'lucide-react';
 import { methodSteps } from '@/data';
 import { PageHero, CTASection } from '@/components/SharedSections';
 

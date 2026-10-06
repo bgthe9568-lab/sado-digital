@@ -11,6 +11,7 @@ export const navItems: { key: PageKey; label: string }[] = [
   { key: 'packs', label: 'Packs' },
   { key: 'a-propos', label: 'À propos' },
   { key: 'contact', label: 'Contact' },
+  { key: 'devis', label: 'Devis' },
 ];
 
 export function useHashRoute(): PageKey {
@@ -34,8 +35,7 @@ export function useHashRoute(): PageKey {
 export function Brand({ light = false, onClick }: { light?: boolean; onClick?: () => void }) {
   return (
     <a className={`brand ${light ? 'brand-light' : ''}`} href="#accueil" aria-label="Sado Digital, accueil" onClick={onClick}>
-      <span className="brand-mark"><span>S</span><span>D</span><i /></span>
-      <span className="brand-copy"><strong>SADO DIGITAL</strong><small>Solutions informatiques globales</small></span>
+      <img className="brand-logo" src="/images/logo_sado_digital.png" alt="Sado Digital" />
     </a>
   );
 }
